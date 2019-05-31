@@ -248,14 +248,8 @@ endif()
 # Examples
 ###############################################################################
 if(EPROSIMA_BUILD_EXAMPLES)
-    add_subdirectory(examples/PublishHelloWorld)
-    add_subdirectory(examples/SubscribeHelloWorld)
-    add_subdirectory(examples/ShapesDemo)
-    add_subdirectory(examples/Deployment)
     add_subdirectory(examples/turtlebot3_lidar)
-    if(PLATFORM_NAME_LINUX OR PLATFORM_NAME_NUTTX)
-        add_subdirectory(examples/Discovery)
-    endif()
+    
 endif()
 
 ###############################################################################
